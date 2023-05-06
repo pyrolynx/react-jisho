@@ -6,7 +6,7 @@ import Card from './Card';
 import Search from './Search';
 
 const convert = (obj: WordLike): Word => new Word(obj.kanji, obj.kana, obj.senses);
-const defaults = default_data.map(convert);
+const defaults = new Array();
 
 const getWordsFromLocalStorage = (): Word[] => {
   const storedWords = localStorage.getItem('words');
@@ -47,11 +47,15 @@ const App: FunctionComponent = () => {
     updateWords();
   }
 
+  const clearWords = () => {
+    if (window.confirm("Do you want to clear all words?")) updateWords(defaults);
+  }
+
   return (
     <>
       <Search addWord={addWord}/>
       <div className="row">
-        <h2 onClick={(event) => updateWords(defaults)}>Lesson words</h2>
+        <h2 onClick={(event) => clearWords()}>Lesson words</h2>
         {words.map(
       (wordItem, index) => (
           <Card key={index} word={wordItem} removeCard={() => removeWord(index)}/>)
