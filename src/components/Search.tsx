@@ -27,7 +27,11 @@ const Search = (props: SearchProps) => {
         if (!value) return;
 
         try {
-            const response = await fetch('https://jisho.org/api/v1/search/words?keyword=' + value);
+            let apiBaseUrl = window.location.origin;
+            if (window.location.host.startsWith("127.0.0.1") || window.location.host.startsWith("localhost")) {
+                apiBaseUrl = "https://jisho.org";
+            }
+            const response = await fetch(apiBaseUrl + '/api/v1/search/words?keyword=' + value);
             const result = await response.json();
             const { data } = result as {data:  Translation[]};
             setWordOptions(
