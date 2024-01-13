@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Word from '../models/Word';
+import {Word} from '../models/Word';
 
 
 interface CardProps {
@@ -9,14 +9,23 @@ interface CardProps {
 }
 
 const Card = (props:CardProps) => {
+    console.log(`${props.word.kanji} + ${props.word.level}`)
   return (
       <div className={"card"}>
           <div className={"card-field kanji"}>{props.word.kanji}</div>
-          {/*<div className={"card-field-splitter"}/>*/}
           <div className={"card-field"}>{props.word.kana}</div>
-          {/*<div className={"card-field-splitter"}/>*/}
-          <div style={{flex: 1}} className={"card-field"}>{props.word.senses.join('; ')}</div>
-          {/*<div className={"card-field-splitter"}/>*/}
+            <div className={"card-field"}>{
+                props.word.level !== undefined ? props.word.level : "-"
+            }</div>
+          <div style={{flex: 1}} className={"card-field"}>
+              <ul>
+                  {
+                    props.word.senses.map(
+                      (sense) => (<li>{sense.meanings.join(', ')}</li>)
+                    )
+                  }
+              </ul>
+          </div>
           <button onClick={(event) => props.removeCard()}>Remove</button>
       </div>
   )

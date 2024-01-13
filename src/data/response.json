@@ -1,0 +1,632 @@
+{
+  "meta": {
+    "status": 200
+  },
+  "data": [
+    {
+      "slug": "新",
+      "is_common": true,
+      "tags": [],
+      "jlpt": [
+        "jlpt-n1"
+      ],
+      "japanese": [
+        {
+          "word": "新",
+          "reading": "しん"
+        }
+      ],
+      "senses": [
+        {
+          "english_definitions": [
+            "new",
+            "neo-"
+          ],
+          "parts_of_speech": [
+            "Prefix"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        },
+        {
+          "english_definitions": [
+            "newness",
+            "novelty"
+          ],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        },
+        {
+          "english_definitions": [
+            "Gregorian calendar"
+          ],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "links": [],
+          "tags": [
+            "Abbreviation"
+          ],
+          "restrictions": [],
+          "see_also": [
+            "新暦"
+          ],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        },
+        {
+          "english_definitions": [
+            "Xin dynasty (of China; 9-23 CE)",
+            "Hsin dynasty"
+          ],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "links": [],
+          "tags": [
+            "Historical term"
+          ],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        },
+        {
+          "english_definitions": [
+            "Xin Dynasty"
+          ],
+          "parts_of_speech": [
+            "Wikipedia definition"
+          ],
+          "links": [
+            {
+              "text": "Read “Xin Dynasty” on English Wikipedia",
+              "url": "http://en.wikipedia.org/wiki/Xin_Dynasty?oldid=495544759"
+            },
+            {
+              "text": "Read “新” on Japanese Wikipedia",
+              "url": "http://ja.wikipedia.org/wiki/新?oldid=42657117"
+            }
+          ],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": [],
+          "sentences": []
+        }
+      ],
+      "attribution": {
+        "jmdict": true,
+        "jmnedict": false,
+        "dbpedia": "http://dbpedia.org/resource/Xin_Dynasty"
+      }
+    },
+    {
+      "slug": "新-1",
+      "is_common": false,
+      "tags": [],
+      "jlpt": [],
+      "japanese": [
+        {
+          "word": "新",
+          "reading": "さら"
+        },
+        {
+          "word": "更",
+          "reading": "さら"
+        },
+        {
+          "word": "新",
+          "reading": "あら"
+        },
+        {
+          "word": "新",
+          "reading": "にい"
+        }
+      ],
+      "senses": [
+        {
+          "english_definitions": [
+            "new",
+            "unused"
+          ],
+          "parts_of_speech": [
+            "Noun",
+            "Noun which may take the genitive case particle 'no'"
+          ],
+          "links": [],
+          "tags": [
+            "Usually written using kana alone",
+            "Kansai dialect"
+          ],
+          "restrictions": [
+            "さら"
+          ],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        },
+        {
+          "english_definitions": [
+            "new"
+          ],
+          "parts_of_speech": [
+            "Prefix"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        },
+        {
+          "english_definitions": [
+            "obvious",
+            "natural"
+          ],
+          "parts_of_speech": [
+            "Na-adjective (keiyodoshi)"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [
+            "更"
+          ],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        }
+      ],
+      "attribution": {
+        "jmdict": true,
+        "jmnedict": false,
+        "dbpedia": false
+      }
+    },
+    {
+      "slug": "新聞",
+      "is_common": true,
+      "tags": [
+        "wanikani10"
+      ],
+      "jlpt": [
+        "jlpt-n5"
+      ],
+      "japanese": [
+        {
+          "word": "新聞",
+          "reading": "しんぶん"
+        }
+      ],
+      "senses": [
+        {
+          "english_definitions": [
+            "newspaper"
+          ],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        },
+        {
+          "english_definitions": [
+            "Newspaper"
+          ],
+          "parts_of_speech": [
+            "Wikipedia definition"
+          ],
+          "links": [
+            {
+              "text": "Read “Newspaper” on English Wikipedia",
+              "url": "http://en.wikipedia.org/wiki/Newspaper?oldid=495554613"
+            },
+            {
+              "text": "Read “新聞” on Japanese Wikipedia",
+              "url": "http://ja.wikipedia.org/wiki/新聞?oldid=42420586"
+            }
+          ],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": [],
+          "sentences": []
+        }
+      ],
+      "attribution": {
+        "jmdict": true,
+        "jmnedict": false,
+        "dbpedia": "http://dbpedia.org/resource/Newspaper"
+      }
+    },
+    {
+      "slug": "新幹線",
+      "is_common": true,
+      "tags": [
+        "wanikani23"
+      ],
+      "jlpt": [
+        "jlpt-n2"
+      ],
+      "japanese": [
+        {
+          "word": "新幹線",
+          "reading": "しんかんせん"
+        }
+      ],
+      "senses": [
+        {
+          "english_definitions": [
+            "Shinkansen",
+            "bullet train"
+          ],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        },
+        {
+          "english_definitions": [
+            "Shinkansen"
+          ],
+          "parts_of_speech": [
+            "Place"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        },
+        {
+          "english_definitions": [
+            "Shinkansen"
+          ],
+          "parts_of_speech": [
+            "Wikipedia definition"
+          ],
+          "links": [
+            {
+              "text": "Read “Shinkansen” on English Wikipedia",
+              "url": "http://en.wikipedia.org/wiki/Shinkansen?oldid=493958644"
+            },
+            {
+              "text": "Read “新幹線” on Japanese Wikipedia",
+              "url": "http://ja.wikipedia.org/wiki/新幹線?oldid=42748152"
+            }
+          ],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": [],
+          "sentences": []
+        }
+      ],
+      "attribution": {
+        "jmdict": true,
+        "jmnedict": true,
+        "dbpedia": "http://dbpedia.org/resource/Shinkansen"
+      }
+    },
+    {
+      "slug": "新しい",
+      "is_common": true,
+      "tags": [
+        "wanikani9"
+      ],
+      "jlpt": [
+        "jlpt-n5"
+      ],
+      "japanese": [
+        {
+          "word": "新しい",
+          "reading": "あたらしい"
+        },
+        {
+          "word": "新らしい",
+          "reading": "あたらしい"
+        }
+      ],
+      "senses": [
+        {
+          "english_definitions": [
+            "new",
+            "novel",
+            "fresh",
+            "recent",
+            "latest",
+            "up-to-date",
+            "modern"
+          ],
+          "parts_of_speech": [
+            "I-adjective (keiyoushi)"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        }
+      ],
+      "attribution": {
+        "jmdict": true,
+        "jmnedict": false,
+        "dbpedia": false
+      }
+    },
+    {
+      "slug": "新聞社",
+      "is_common": true,
+      "tags": [],
+      "jlpt": [
+        "jlpt-n4"
+      ],
+      "japanese": [
+        {
+          "word": "新聞社",
+          "reading": "しんぶんしゃ"
+        }
+      ],
+      "senses": [
+        {
+          "english_definitions": [
+            "newspaper company"
+          ],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        }
+      ],
+      "attribution": {
+        "jmdict": true,
+        "jmnedict": false,
+        "dbpedia": false
+      }
+    },
+    {
+      "slug": "新鮮",
+      "is_common": true,
+      "tags": [
+        "wanikani25"
+      ],
+      "jlpt": [
+        "jlpt-n3"
+      ],
+      "japanese": [
+        {
+          "word": "新鮮",
+          "reading": "しんせん"
+        }
+      ],
+      "senses": [
+        {
+          "english_definitions": [
+            "fresh"
+          ],
+          "parts_of_speech": [
+            "Na-adjective (keiyodoshi)"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        }
+      ],
+      "attribution": {
+        "jmdict": true,
+        "jmnedict": false,
+        "dbpedia": false
+      }
+    },
+    {
+      "slug": "新た",
+      "is_common": true,
+      "tags": [
+        "wanikani11"
+      ],
+      "jlpt": [
+        "jlpt-n3"
+      ],
+      "japanese": [
+        {
+          "word": "新た",
+          "reading": "あらた"
+        }
+      ],
+      "senses": [
+        {
+          "english_definitions": [
+            "new",
+            "fresh",
+            "novel"
+          ],
+          "parts_of_speech": [
+            "Na-adjective (keiyodoshi)"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        }
+      ],
+      "attribution": {
+        "jmdict": true,
+        "jmnedict": false,
+        "dbpedia": false
+      }
+    },
+    {
+      "slug": "改めて",
+      "is_common": true,
+      "tags": [],
+      "jlpt": [
+        "jlpt-n2"
+      ],
+      "japanese": [
+        {
+          "word": "改めて",
+          "reading": "あらためて"
+        },
+        {
+          "word": "新ためて",
+          "reading": "あらためて"
+        }
+      ],
+      "senses": [
+        {
+          "english_definitions": [
+            "another time",
+            "again",
+            "over again",
+            "once again",
+            "anew"
+          ],
+          "parts_of_speech": [
+            "Adverb (fukushi)"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        },
+        {
+          "english_definitions": [
+            "formally",
+            "especially",
+            "intentionally",
+            "deliberately"
+          ],
+          "parts_of_speech": [
+            "Adverb (fukushi)"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        }
+      ],
+      "attribution": {
+        "jmdict": true,
+        "jmnedict": false,
+        "dbpedia": false
+      }
+    },
+    {
+      "slug": "新人",
+      "is_common": true,
+      "tags": [],
+      "jlpt": [
+        "jlpt-n1"
+      ],
+      "japanese": [
+        {
+          "word": "新人",
+          "reading": "しんじん"
+        }
+      ],
+      "senses": [
+        {
+          "english_definitions": [
+            "newcomer",
+            "new figure",
+            "new member",
+            "recruit",
+            "rookie",
+            "new talent",
+            "new star"
+          ],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        },
+        {
+          "english_definitions": [
+            "modern humans (from Cro-Magnon man onwards)",
+            "Homo sapiens"
+          ],
+          "parts_of_speech": [
+            "Noun"
+          ],
+          "links": [],
+          "tags": [],
+          "restrictions": [],
+          "see_also": [],
+          "antonyms": [],
+          "source": [],
+          "info": []
+        }
+      ],
+      "attribution": {
+        "jmdict": true,
+        "jmnedict": false,
+        "dbpedia": false
+      }
+    }
+  ]
+}

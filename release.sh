@@ -1,6 +1,12 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 set -e
-
-npx update-browserslist-db@latest
 npm run build
-scp -r build/. root@pirotech.link:/var/www/react-jisho
+
+target="$1"
+if [ -z "$target" ]; then target="$TARGET"; fi
+if [ -z "$target" ]; then
+  echo 'No host specified'
+  exit 2
+fi
+
+scp -r build/. "${target}:/var/www/react-jisho"

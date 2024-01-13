@@ -1,7 +1,7 @@
 import React, {FunctionComponent, useEffect, useState} from 'react';
 
 import default_data from '../data/data.json'
-import Word, {WordLike} from '../models/Word';
+import {Word, WordLike} from '../models/Word';
 import Card from './Card';
 import Search from './Search';
 
@@ -43,6 +43,16 @@ const App: FunctionComponent = () => {
   }
 
   const addWord = (word: Word) => {
+    let index = -1;
+    for (let i = 0; i < words.length; i++) {
+      if (words[i].kanji === word.kanji && words[i].kana === word.kana) {
+        index = i;
+        break;
+      }
+    }
+    if (index !== -1) {
+      words.splice(index, 1);
+    }
     words.unshift(word);
     updateWords();
   }
@@ -55,7 +65,10 @@ const App: FunctionComponent = () => {
     <>
       <Search addWord={addWord}/>
       <div className="row">
-        <h2 onClick={(event) => clearWords()}>Lesson words</h2>
+        <div>
+          <h2 onClick={(event) => clearWords()}>Lesson words</h2>
+          <p>Total: {words.length}</p>
+        </div>
         {words.map(
       (wordItem, index) => (
           <Card key={index} word={wordItem} removeCard={() => removeWord(index)}/>)
