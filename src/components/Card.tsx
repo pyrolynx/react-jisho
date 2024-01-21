@@ -1,4 +1,5 @@
 import React from 'react';
+import CloseButton from 'react-bootstrap/CloseButton';
 
 import {Word} from '../models/Word';
 
@@ -11,23 +12,23 @@ interface CardProps {
 const Card = (props:CardProps) => {
     console.log(`${props.word.kanji} + ${props.word.level}`)
   return (
-      <div className={"card"}>
-          <div className={"card-field kanji"}>{props.word.kanji}</div>
-          <div className={"card-field"}>{props.word.kana}</div>
-            <div className={"card-field"}>{
-                props.word.level !== undefined ? props.word.level : "-"
-            }</div>
-          <div style={{flex: 1}} className={"card-field"}>
-              <ul>
-                  {
-                    props.word.senses.map(
-                      (sense) => (<li>{sense.meanings.join(', ')}</li>)
-                    )
-                  }
-              </ul>
-          </div>
-          <button onClick={(event) => props.removeCard()}>Remove</button>
-      </div>
+      <tr>
+            <td className={"kanji"}>{props.word.kanji}</td>
+            <td>{props.word.kana}</td>
+            <td>{props.word.level}</td>
+            <td>
+                <ul>
+                    {
+                        props.word.senses.map(
+                            (sense) => (<li>{sense.meanings.join(', ')}</li>)
+                        )
+                    }
+                </ul>
+            </td>
+            <td align={"center"}>
+                <CloseButton onClick={(event) => props.removeCard()}/>
+            </td>
+        </tr>
   )
 }
 

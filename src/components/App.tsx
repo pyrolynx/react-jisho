@@ -4,6 +4,7 @@ import default_data from '../data/data.json'
 import {Word, WordLike} from '../models/Word';
 import Card from './Card';
 import Search from './Search';
+import {Table} from "react-bootstrap";
 
 const convert = (obj: WordLike): Word => new Word(obj.kanji, obj.kana, obj.senses);
 const defaults = new Array();
@@ -69,10 +70,19 @@ const App: FunctionComponent = () => {
           <h2 onClick={(event) => clearWords()}>Lesson words</h2>
           <p>Total: {words.length}</p>
         </div>
-        {words.map(
-      (wordItem, index) => (
-          <Card key={index} word={wordItem} removeCard={() => removeWord(index)}/>)
-      )}
+        <Table striped bordered hover>
+          <tr>
+            <th className={"align-center"}>Kanji</th>
+            <th>Kana</th>
+            <th>Level</th>
+            <th>Meanings</th>
+            <th>Remove</th>
+          </tr>
+          {words.map(
+        (wordItem, index) => (
+            <Card key={index} word={wordItem} removeCard={() => removeWord(index)}/>)
+        )}
+        </Table>
       </div>
     </>
   );

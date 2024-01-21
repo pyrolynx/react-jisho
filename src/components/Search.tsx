@@ -22,10 +22,6 @@ interface Translation {
     }[],
 }
 
-const toSuggestItem = (word: Word): string => {
-    return word.kanji + '(' + word.kana + '): ' + word.senses.join('; ')
-}
-
 const Search = (props: SearchProps) => {
     const [wordOptions, setWordOptions] = useState<Word[]>([]);
     const selectRef = useRef<typeof Select>(null);
@@ -72,7 +68,9 @@ const Search = (props: SearchProps) => {
         } catch (err) {console.error(err)}
   }, 500);
 
-  const options = wordOptions.map((word: Word) => ({label: toSuggestItem(word), value: word}));
+  const options = wordOptions.map((word: Word) => ({
+      label: word.toString(), value: word
+  }));
 
   return (
         <div className="row">

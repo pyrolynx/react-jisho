@@ -4,7 +4,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #8c8eab;
   padding: 0 15px;
   display: block;
   position: relative;
@@ -21,41 +20,11 @@ code {
     width: 100%;
 }
 
-.card {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: beige;
-  margin-top: 5px;
-}
-
-.card-field {
-  display: flex;
-  align-items: center;
-  padding: 0px 10px;
-  border-right: 1px solid grey;
-}
-
-.card-field:first-of-type {
-  padding-left: 0px;
-}
-
-.card-field:last-of-type {
-  padding-left: 10px;
-  padding-right: 0px;
-  border-right: 0px;
-}
-
-.card-field-splitter {
-  float: left;
-  position: relative;
-  background-color: #484c56;
-  width: 1px;
-  height: 30px;
-  margin: 0 10px;
+.align-center {
+    text-align: center;
 }
 
 .kanji {
   font-size: 24pt;
+  text-align: center;
 }

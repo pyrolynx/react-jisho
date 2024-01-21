@@ -17,7 +17,9 @@ export class Sense {
     this.wordType = wordType;
   }
 
-  toString = (): string => `[${this.wordType ? this.wordType : "?"}] ${this.meanings.join(", ")}}`
+  toString = (): string => `[${this.wordType ? this.wordType : "?"}] ${this.meanings.join(", ")}}`;
+
+  toSuggestString = (): string => `${this.meanings.join(", ")}`;
 }
 export class Word implements WordLike{
   kanji: string;
@@ -33,11 +35,15 @@ export class Word implements WordLike{
     this.level = level;
   }
   toString = (): string => {
-    return `${this.kanji} (${this.kana}): ${this.senses.map(sense => sense.toString()).join("; ")}`
-  }
-
-  getWordType = (): WordType | undefined => {
-    return this.senses.find((sense: Sense): boolean => sense.wordType !== undefined)?.wordType;
+    let parts = [];
+    if (this.kanji !== undefined)
+      parts.push(`${this.kanji} (${this.kana}):`);
+    else
+        parts.push(`${this.kana}:`);
+    parts.push(this.senses.map(sense => sense.toSuggestString()).join("; "));
+    if (this.level !== undefined)
+      parts.push(`[${this.level}]`);
+    return parts.join(" ");
   }
 }
 
