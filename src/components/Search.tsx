@@ -75,6 +75,7 @@ const Search = (props: SearchProps) => {
   return (
         <div className="row">
             <Select
+                placeholder={"Start typing in Japanese or English..."}
                 options={options}
                 onInputChange={(newValue) => {
                     searchWord(newValue);
