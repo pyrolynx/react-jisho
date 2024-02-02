@@ -1,13 +1,11 @@
-import React, {FunctionComponent, useEffect, useState} from 'react';
+import React, { FunctionComponent, useEffect, useState } from 'react';
 
-import default_data from '../data/data.json'
-import {Word, WordLike} from '../models/Word';
+import { Word } from '../types/Word';
 import Card from './Card';
 import Search from './Search';
-import {Table} from "react-bootstrap";
+import { Table } from 'react-bootstrap';
 
-const convert = (obj: WordLike): Word => new Word(obj.kanji, obj.kana, obj.senses);
-const defaults = new Array();
+const defaults: Word[] = [];
 
 const getWordsFromLocalStorage = (): Word[] => {
   const storedWords = localStorage.getItem('words');
@@ -16,8 +14,7 @@ const getWordsFromLocalStorage = (): Word[] => {
       localStorage.setItem('words', JSON.stringify(defaults));
       return new Array(...defaults);
     }
-    let newWords = JSON.parse(storedWords).map(convert);
-    return newWords;
+  return JSON.parse(storedWords);
 }
 
 const storeWordsToLocalStorage = (words: Word[]): void => {
@@ -67,21 +64,27 @@ const App: FunctionComponent = () => {
       <Search addWord={addWord}/>
       <div className="row">
         <div>
-          <h2 onClick={(event) => clearWords()}>Lesson words</h2>
+          <h2 onClick={() => clearWords()}>Lesson words</h2>
           <p>Total: {words.length}</p>
         </div>
         <Table striped bordered hover>
-          <tr>
-            <th className={"align-center"}>Kanji</th>
-            <th>Kana</th>
-            <th>Level</th>
-            <th>Meanings</th>
-            <th>Remove</th>
-          </tr>
-          {words.map(
-        (wordItem, index) => (
-            <Card key={index} word={wordItem} removeCard={() => removeWord(index)}/>)
-        )}
+          <thead>
+            <tr>
+              <th className={"align-center"}>Kanji</th>
+              <th>Kana</th>
+              <th>Level</th>
+              <th>Meanings</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              words.map(
+                (wordItem, index) => (
+                <Card key={index} word={wordItem} removeCard={() => removeWord(index)}/>)
+              )
+            }
+          </tbody>
         </Table>
       </div>
     </>

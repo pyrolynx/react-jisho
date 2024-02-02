@@ -1,7 +1,7 @@
 import React from 'react';
 import CloseButton from 'react-bootstrap/CloseButton';
 
-import {Word} from '../models/Word';
+import {Word} from '../types/Word';
 
 
 interface CardProps {
@@ -20,13 +20,15 @@ const Card = (props:CardProps) => {
                 <ul>
                     {
                         props.word.senses.map(
-                            (sense) => (<li>{sense.meanings.join(', ')}</li>)
+                            (sense, index) => (
+                              <li key={index}>{sense.meanings.join(', ')}</li>
+                            )
                         )
                     }
                 </ul>
             </td>
             <td align={"center"}>
-                <CloseButton onClick={(event) => props.removeCard()}/>
+                <CloseButton onClick={() => props.removeCard()}/>
             </td>
         </tr>
   )

@@ -1,5 +1,5 @@
-import {JLPTLevel} from "../enums/JLPTLevel";
-import {WordType} from "../enums/WordType";
+import {JLPTLevel} from "../constants/JLPTLevel";
+import {WordType} from "../constants/WordType";
 
 export interface WordLike {
   kanji: string;

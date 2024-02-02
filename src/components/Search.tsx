@@ -1,12 +1,11 @@
 import Select from "react-select";
 
-import {useRef, useState} from "react";
-import {Word, Sense} from "../models/Word";
+import {useState} from "react";
+import {Word, Sense} from "../types/Word";
 
 import {debounce} from 'lodash';
-import {JLPTLevel} from "../enums/JLPTLevel";
-import {WordType} from "../enums/WordType";
-import {data as mocked_data} from "../data/response.json"
+import {JLPTLevel} from "../constants/JLPTLevel";
+import {WordType} from "../constants/WordType";
 
 
 interface SearchProps {
@@ -24,18 +23,20 @@ interface Translation {
 
 const Search = (props: SearchProps) => {
     const [wordOptions, setWordOptions] = useState<Word[]>([]);
-    const selectRef = useRef<typeof Select>(null);
 
     const searchWord = debounce(async (value?: string) => {
         if (!value) return;
 
         try {
-            let apiBaseUrl = window.location.origin;
-            apiBaseUrl = "https://jisho.pirotech.link";
-            // if (window.location.host.startsWith("127.0.0.1") || window.location.host.startsWith("localhost")) {
+            // const apiBaseUrl = window.location.origin;
+            const apiBaseUrl = "https://jisho.pirotech.link";
+            // if (window.location.host.startsWith("127.0.0.1") ||
+            //     window.location.host.startsWith("localhost")) {
             //     apiBaseUrl = "https://jisho.org";
             // }
-            const response = await fetch(apiBaseUrl + '/api/v1/search/words?keyword=' + value);
+            const response = await fetch(
+                apiBaseUrl + '/api/v1/search/words?keyword=' + value
+            );
             const result = await response.json();
             const { data } = result as {data:  Translation[]};
             setWordOptions(
@@ -85,7 +86,7 @@ const Search = (props: SearchProps) => {
                 onChange={(optionValue) => {
                     if (optionValue !== null) props.addWord(optionValue.value);
                 }}
-                onBlur={(event) => {
+                onBlur={() => {
                     setWordOptions([])
                 }}
 
